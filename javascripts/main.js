@@ -28,37 +28,37 @@ const bookInfo = [
   {
     price: 25.99,
     title: "Fifty Shades of Chicken",
-    image: "chicken.jpg",
+    image: "./assets/images/chicken.jpg",
     featured: false,
   },
   {
     price: 15.45,
     title: "Fifty Shades of Bacon",
-    image: "bacon.jpg",
+    image: "./assets/images/bacon.jpg",
     featured: true,
   },
   {
     price: 5,
     title: "Fifty Shades of Kale",
-    image: "kale.jpg",
+    image: "./assets/images/kale.jpg",
     featured: false,
   },
   {
     price: 2,
     title: "Fifteen Shades for Grey",
-    image: "animals.jpeg",
+    image: "./assets/images/animals.jpeg",
     featured: false,
   },
   {
     price: 50,
     title: "Fifty Shades of Zombie",
-    image: "zombie.jpg",
+    image: "./assets/images/zombie.jpg",
     featured: true,
   },
   {
     price: 0.75,
     title: "Fifty Shades of Gravy",
-    image: "gravy.jpg",
+    image: "./assets/images/gravy.jpg",
     featured: false,
   },
 ];
@@ -309,7 +309,7 @@ const navigationEvents = () => {
       return book.title.toLowerCase().includes(searchValue);
     })
 
-    console.log(searches);
+    
     if (searches.length === 0) {
       emptyStore();
     } else {
