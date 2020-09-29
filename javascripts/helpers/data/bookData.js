@@ -58,7 +58,7 @@ const bookInfo = [
               break;
           default:
               return;
-      }
-  }
+      };
+  };
   
-  export { getBooks }
+  export { getBooks };

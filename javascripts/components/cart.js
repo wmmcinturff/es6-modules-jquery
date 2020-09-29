@@ -25,7 +25,6 @@ const makeCart = () => {
               </table>
             </div>
   
-  
             <div class="modal-body">
               <b>Your total is: $${cartTotal().toFixed(2)}</b>
               <div id="error-message" style="color: red;"></div>
@@ -50,7 +49,6 @@ const makeCart = () => {
         </div>`
       );
   
-      
       $('#charge-it').click(() => {
         const ccNum = $('#credit-card').val();
         chargeIt(ccNum);
@@ -69,9 +67,7 @@ const makeCart = () => {
   }
   
   const showCartItems = () => {
-  
     let obj = {};
-  
     getCart().forEach((item) => {
       if (item.title in obj) {
         obj[item.title].quantity++;
@@ -89,16 +85,15 @@ const makeCart = () => {
           <td>${obj[title].price.toFixed(2)}</td>
         </tr>`
       )
-    })
-  }
-  
+    });
+  };
   
   const cartTotal = () => {
     const myCart = getCart();
     const total = myCart.reduce((a, cartItem) => {return a + cartItem.price;}, 0);
   
     return total;
-  }
+  };
   
   const chargeIt = (ccNum) => {
     if (ccNum === "") {
@@ -112,8 +107,8 @@ const makeCart = () => {
         `<h2 style="margin-top: 100px;">Thank you for your order.</h2>
         <p>Your credit card number was ${ccNum} has been charged.</p>`
       )
-    }
+    };
   };
 
-  export { makeCart, addToCart }
+  export { makeCart, addToCart };
   
