@@ -11,6 +11,7 @@ import { setCart } from "./../helpers/data/cartData.js";
       chargeIt(ccNum);
     });
   
+  
     showCartItems();
   };
   
@@ -23,4 +24,5 @@ import { setCart } from "./../helpers/data/cartData.js";
     });
   };
   
-  export { addToCart };
+  export { makeCart, addToCart };
+  
