@@ -1,7 +1,5 @@
 import { setCart, getCart, emptyCart } from './../helpers/data/cartData.js';
 
-
-
 const makeCart = () => {
     $("#cart").html(` 
       <div class="modal fade" id="buy-modal" tabindex="-1" role="dialog" aria-labelledby="buy-modalLabel" aria-hidden="true">
@@ -117,5 +115,5 @@ const makeCart = () => {
     }
   };
 
-  export { makeCart, addToCart }
+  export { makeCart, addToCart };
   
