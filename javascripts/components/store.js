@@ -1,19 +1,13 @@
-import { addToCart } from './cart.js';
+import { addToCart } from './addCart.js';
 
 const makeStore = (array, titles = false) => {
-    
     $("#store").html("");
-  
-    
     array.forEach((item, index) => {
-  
-    
-      switch(titles) {
 
+      switch(titles) {
         case true:
           $("#store").removeClass('card-columns')
           $("#store").append(`<div>${item.title} | ${item.price}</div>`)
-  
           break;
         
         default:
@@ -37,9 +31,7 @@ const makeStore = (array, titles = false) => {
           );
       }
   
-      
       addToCart(array, index);
-  
   
     });
   };

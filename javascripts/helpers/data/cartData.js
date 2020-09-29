@@ -1,15 +1,15 @@
 const cart = [];
 
 const setCart = (book) => {
-    cart.push(book);
-  }
-  
-  const getCart = () => {
-    return cart;
-  }
+  cart.push(book);
+};
 
-  const emptyCart = () => {
-    cart.length = 0;
-  }
+const getCart = () => {
+  return cart;
+};
 
-  export { setCart, getCart, emptyCart }
+const emptyCart = () => {
+  cart.length = 0;
+};
+
+export { setCart, getCart, emptyCart };
